@@ -1,0 +1,161 @@
+body, html, div,  img, label, p, h1, h2, h3, h4, h5, h6, pre, ul, ol,
+li, dl, dt, dd, form, a, input, th, td{margin: 0; padding: 0; font-size: 15px; box-sizing: border-box;}
+ul, ol{list-style: none;}
+a{text-decoration: none;}
+
+ 
+
+
+@-webkit-keyframes box-fade-up{0%{opacity:0}25%{opacity:0;-webkit-transform:translatey(60px)}100%{opacity:1;-webkit-transform:translatey(0)}}
+@-moz-keyframes box-fade-up{0%{opacity:0}25%{opacity:0;-moz-transform:translatey(60px)}100%{opacity:1;-moz-transform:translatey(0)}}
+@-o-keyframes box-fade-up{0%{opacity:0}25%{opacity:0;-o-transform:translatey(60px)}100%{opacity:1;-o-transform:translatey(0)}}
+@keyframes box-fade-up{  0%{opacity:0}  25%{opacity:0;transform:translatey(60px)}  100%{opacity:1;transform:translatey(0)}}
+
+@-webkit-keyframes rate-css{0%{width: 0}100%{width: 70%;}} 
+@-moz-keyframes rate-css{0%{width: 0}100%{width: 70%;}} 
+@-o-keyframes rate-css{0%{width: 0}100%{width: 70%;}} 
+@keyframes rate-css{0%{width: 0}100%{width: 70%;}} 
+
+@-webkit-keyframes rate-html{0%{width: 0}100%{width: 80%;}} 
+@-moz-keyframes rate-html{0%{width: 0}100%{width: 80%;}} 
+@-o-keyframes rate-html{0%{width: 0}100%{width: 80%;}} 
+@keyframes rate-html{0%{width: 0}100%{width: 80%;}} 
+
+@-webkit-keyframes rate-js{0%{width: 0}100%{width: 15%}} 
+@-moz-keyframes rate-js{0%{width: 0}100%{width: 15%}} 
+@-o-keyframes rate-js{0%{width: 0}100%{width: 15%}} 
+@keyframes rate-js{0%{width: 0}100%{width: 15%}} 
+
+@-webkit-keyframes rate-jquery{0%{width: 0}100%{width: 13%;}} 
+@-moz-keyframes rate-jquery{0%{width: 0}100%{width: 13%;}} 
+@-o-keyframes rate-jquery{0%{width: 0}100%{width: 13%;}} 
+@keyframes rate-jquery{0%{width: 0}100%{width: 13%;}} 
+
+@-webkit-keyframes rate-php{0%{width: 0}100%{width: 25%;}} 
+@-moz-keyframes rate-php{0%{width: 0}100%{width: 25%;}} 
+@-o-keyframes rate-php{0%{width: 0}100%{width: 25%;}} 
+@keyframes rate-php{0%{width: 0}100%{width: 25%;}} 
+
+@-webkit-keyframes pulse {0% { -webkit-transform: scale(1); opacity: 0.3; }100% { -webkit-transform: scale(1.3); opacity: 0.0; }} 
+@-moz-keyframes pulse {0% { -moz-transform: scale(1); opacity: 0.3; }100% { -moz-transform: scale(1.3); opacity: 0.0; }} 
+@-o-keyframes pulse {0% { -o-transform: scale(1); opacity: 0.3; }100% { -o-transform: scale(1.3); opacity: 0.0; }} 
+@keyframes pulse {0% { transform: scale(1);  opacity: 0.3; }100% { transform: scale(1.3);opacity: 0.0; }}  
+
+@-webkit-keyframes down{0%{top:0;}50%{top:15px;}100%{top:0;}} 
+@-moz-keyframes down{0%{top:0;}50%{top:15px;}100%{top:0;}} 
+@-o-keyframes down{0%{top:0;}50%{top:15px;}100%{top:0;}} 
+@keyframes down{0%{top:0;}50%{top:15px;}100%{top:0;}}
+
+
+body{font-family: 'Varela Round'; position: absolute; top: 0;left: 0;bottom: 0;right: 0; overflow: hidden;}
+
+
+.container{ padding: 0 10px; display: table-cell; vertical-align: middle; }
+.maxwidth{max-width: 720px; margin: 0 auto; }
+.container h2{color: black; }
+
+
+.iconfont{font-family:"iconfont";font-size:20px;font-style:normal;-webkit-font-smoothing: antialiased;
+-webkit-text-stroke-width: 0.2px; margin-right: 15px;}
+
+
+.panel{display: table; position: absolute;top: 100%;left: 0; text-align: center; height: 100%;width: 100%;color: black; }
+.panel p{line-height: 25px; }
+
+
+.panel-about{ background: url(../images/about_bg.jpg) no-repeat 50% 50%/auto 140% ; color: #0D0405; } 
+.about-fadeup{-webkit-animation: box-fade-up 1.6s ease forwards;-moz-animation: box-fade-up 1.6s ease forwards;-o-animation: box-fade-up 1.6s ease forwards;  animation: box-fade-up 1.6s ease forwards;}
+
+.about-avatar{display: inline-block;position: relative; width: 164px; height: 164px; border-radius: 50%; margin-bottom: 30px;}
+.about-avatar-pulse { position: absolute; height: 100%; width: 100%; border: 2px solid #fff;  border-radius: 50%; box-shadow:-2px -2px 20px #fff; 
+    -webkit-animation: pulse 1.5s ease-out infinite;-o-animation: pulse 1.5s ease-out infinite; -moz-animation: pulse 1.5s ease-out infinite; animation: pulse 1.5s ease-out infinite;} 
+.about-avatar-inner{ height: 100%; width: 100%; border-radius: 50%; border:4px solid #fff; overflow: hidden;}
+.about-avatar img{width: 100%; margin-top: -20px;}
+.about-detail h1{display: inline-block;font-size: 44px;font-weight: normal;border-bottom: 2px solid #0D0405;;padding-bottom: 5px;margin-bottom: 10px; }
+.about-detail h2{font-size: 18px;font-weight: normal;margin-bottom: 50px;color: #0D0405;}
+.about-detail p{margin-bottom: 10px;}
+.about-tel{color:#0D0405; text-decoration: none; cursor: default; }
+
+
+
+.panel-school{ background: url(../images/school_bg.jpg) no-repeat 50% 50%/auto 155% ; color: #0D0405;}
+.school-detail h2{color:black;font-weight: normal;font-size: 13px;padding-bottom: 5px;  #4169E1margin-bottom: 15px;display: inline-block;}
+.school-detail p{margin-bottom: 50px;}
+.school-vaxcourse,.school-vaxaward,.school-vaxexper{opacity:0;}
+.active .school-vaxcourse{ -webkit-animation: box-fade-up 1s linear forwards;-moz-animation: box-fade-up 1s linear forwards;-o-animation: box-fade-up 1s linear forwards;  animation: box-fade-up 1s linear forwards;}
+.active .school-vaxaward{ -webkit-animation: box-fade-up 1s linear 1s forwards;-moz-animation: box-fade-up 1s linear 1s forwards;-o-animation: box-fade-up 1s linear 1s forwards;  animation: box-fade-up 1s linear 1s forwards;}
+.active .school-vaxexper{ -webkit-animation: box-fade-up 1s linear 2s forwards;-moz-animation: box-fade-up 1s linear 2s forwards; -o-animation: box-fade-up 1s linear 2s forwards;  animation: box-fade-up 1s linear 2s forwards;}
+
+
+.panel-skills{background: url(../images/skill_bg.jpg) no-repeat 50% 50%/auto 140% ; color: #0D0405;}
+
+.panel-skills h2{font-weight: normal;font-size: 13px;padding-bottom:5px;border-bottom: 2px solid #fff;margin-bottom: 15px;display: inline-block;}
+.panel-skills li{ margin:20px 0; overflow: hidden; }
+.panel-skills li > span:first-child{display: inline-block; width: 250px;  text-align: left; line-height: 15px; }
+
+.skills-outer{ display:inline-block; width:-webkit-calc(100% - 350px );width:-moz-calc(100% - 350px );width:-o-calc(100% - 350px );width:calc(100% - 350px ); height: 15px;background-color:  #F5F5F5; border-radius: 7px;}
+.skills-outer > span{ display: block; height: 15px; background-color:   #4169E1; border-radius: 7px;}
+.skills-css,.skills-html,.skills-js,.skills-jquery,.skills-php{width: 0;}
+
+.active .skills-css{-webkit-animation: rate-css 1s ease forwards;-moz-animation: rate-css 1s ease forwards;-o-animation: rate-css 1s ease forwards; animation: rate-css 1s ease forwards;}
+.active .skills-html{-webkit-animation: rate-html 1s ease 1s forwards;-moz-animation: rate-html 1s ease 1s forwards;-o-animation: rate-html 1s ease 1s forwards;animation: rate-html 1s ease 1s forwards;}
+.active .skills-js{-webkit-animation: rate-js 1s ease 2s forwards;-moz-animation: rate-js 1s ease 2s forwards;-o-animation: rate-js 1s ease 2s forwards; animation: rate-js 1s ease 2s forwards;}
+.active .skills-jquery{-webkit-animation: rate-jquery 1s ease 3s forwards;-moz-animation: rate-jquery 1s ease 3s forwards;-o-animation: rate-jquery 1s ease 3s forwards;animation: rate-jquery 1s ease 3s forwards;}
+.active .skills-php{-webkit-animation: rate-php 1s ease 4s forwards;-moz-animation: rate-php 1s ease 4s forwards;-o-animation: rate-php 1s ease 4s forwards;animation: rate-php 1s ease 4s forwards;}
+
+
+.panel-practice{background: url(../images/practice_bg.jpg) no-repeat 50% 50%/auto 160% ; color: #0D0405;}
+
+.panel-practice dl{ margin-bottom: 20px; opacity: 0;}
+.panel-practice dt{ margin: 20px 0; font-weight: bold; }
+.panel-practice dd{ margin: 5px 0;}
+.panel-practice h2{ font-weight: normal; font-size: 13px;border-bottom: 2px solid #fff;margin-bottom: 15px; padding-bottom: 5px; display: inline-block;}
+
+.active dl:nth-child(2){-webkit-animation: box-fade-up 1s ease forwards;-moz-animation: box-fade-up 1s ease forwards;-o-animation: box-fade-up 1s ease forwards;animation: box-fade-up 1s ease forwards;}
+.active dl:nth-child(3){-webkit-animation: box-fade-up 1s ease 1s forwards;-moz-animation: box-fade-up 1s ease 1s forwards;-o-animation: box-fade-up 1s ease 1s forwards;animation: box-fade-up 1s ease 1s forwards;}
+
+
+.footer{position: fixed; width:30px; height: 30px; left: -15px; bottom: 25px; margin: 0 50% 0 50%;}
+.triangle{position:relative; width:100%; height:100%; color: black; -webkit-animation: down 3s linear infinite;-o-animation: down 3s linear infinite; -moz-animation: down 3s linear infinite;  
+    animation: down 3s linear infinite; }
+.pulse{ position:absolute; font-size: 30px;}
+
+
+@media(max-width:1024px){
+  .about-avatar{width: 100px; height: 100px;}
+  .about-detail h2{ margin-bottom: 30px;}
+  .about-avatar-inner{ border:2px solid #fff;}
+  .about-avatar img{margin-top: -10px;}
+
+  .about-detail h1{font-size: 30px;}
+  .about-detail h2{margin-bottom: 25px;}
+}
+
+ 
+@media(max-width:400px){
+  .about-avatar{width: 80px; height: 80px;}
+  .about-avatar img{margin-top: -8px;}
+  .about-tel{color:#845939; text-decoration: none; border-bottom:1px solid #845939; }
+
+
+  .panel-skills h2{font-size: 20px;}
+  .skills-outer{ display:inline-block; width:-webkit-calc(100% - 250px );width:-moz-calc(100% - 250px );width:-o-calc(100% - 250px );width:calc(100% - 250px );}
+
+
+  .school-detail h2{font-size: 20px; margin: 5px 0; }
+  .school-detail p{margin-bottom: 20px;}
+
+
+  .panel-practice h2{font-size: 20px;margin-bottom: 10px;}
+  .footer{ bottom: 15px; } 
+}
+
+
+@media(max-width:320px){
+  .active .school-vaxexper{display: none;}
+
+  .panel-practice h2{margin-bottom: 7px; padding-bottom: 3px;} 
+  .panel-practice dl{margin-bottom: 5px;}
+  .panel-practice dt{margin: 0 0 3px 0;}
+  .panel-practice dd{margin: 0 0 5px 0;}
+}

@@ -1,0 +1,369 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>php</title>
+<link href="css/bootstrap.css" rel='stylesheet' type='text/css' />
+<!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
+<script src="js/jquery.min.js"></script>
+<!-- Custom Theme files -->
+<link href="css/style.css" rel="stylesheet" type="text/css" media="all" />
+<!-- Custom Theme files -->
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+
+
+	<script type="text/javascript" src="js/bootstrap.js"></script>
+
+<script src="js/responsiveslides.min.js"></script>
+	
+	<script type="text/javascript" src="js/move-top.js"></script>
+<script type="text/javascript" src="js/easing.js"></script>
+<!--/script-->
+
+ <style type="text/css">
+.header-top a:hover{
+	color: white;
+	text-decoration: none;
+}
+.articles header {
+    border-bottom: 1px solid #84754e;
+}
+.articles {
+    margin: 4em 0;
+}
+.article {
+	border-bottom: 1px solid #eee;
+    margin-top: 3.5em;
+    padding-bottom: 3em;
+}
+.article:last-child {
+    border: none;
+}
+.article-left {
+    width: 30%;
+    float: left;
+	margin-right:3%;
+}
+.article-right {
+    float: right;
+    width: 66%;
+}
+.article-left img {
+    width: 100%;
+	opacity:0.8;
+    transition:0.5s all;
+	
+}
+.article-left img:hover {
+	opacity:1;
+    transition:0.5s all;
+	
+}
+a.title {
+    font-size: 1.9em;
+    color: #000;
+}
+a.title:hover {
+	color:#84754e;
+}
+.article-title p {
+    color: #B5B3B3;
+    font-size: 0.875em;
+    font-style: italic;
+    margin: 0.5em 0;
+	text-transform: uppercase;
+}
+span.glyphicon.glyphicon-comment,span.glyphicon.glyphicon-eye-open,span.glyphicon.glyphicon-thumbs-up,.glyphicon.glyphicon-time {
+    font-size: 10px;
+    margin: 0 4px 0 20px;
+}
+a.span_link {
+    color: #C5C5C5;
+}
+a.span_link:hover {
+    color: #84754e;
+}
+.article-text p {
+    color: #777;
+    line-height: 2em;
+    margin: 1.5em 0 0.8em 0;
+    font-size: 0.95em;
+}
+.article-text a {
+	font-size:1em;
+	color:#000;
+}
+.article-text a {
+    float: right;
+}
+.article-text a:hover {
+	color:#000;
+}
+.article-left iframe {
+	min-height:200px;
+}
+.life-style header {
+    border-bottom: 1px solid #84754e;
+    padding-bottom: 4px;
+}
+.life-style-left-grid {
+	float:left;
+	width:48%;
+	margin-right:4%;
+}
+.life-style-left-grid img,.life-style-right-grid img {
+	width:100%;
+	margin-bottom: 1em;
+}
+.life-style-right-grid {
+	float:left;
+	width:48%;
+}
+.life-style-grids {
+    margin-top: 2em;
+}
+    </style>
+</head>
+<body>
+	<!-- header-section-starts-here -->
+	<div class="header">
+		<div class="header-top">
+			<div class="wrap">
+				<div class="top-menu">
+					<ul>
+						<li><a href="index.html">欢迎来到曹娟的个人博客！</a></li>
+						
+					</ul>
+				</div>
+				<div class="num">
+				  <ul>
+					<li ><a href="login.html">登录 | </a><a href="login.html">注册</a></li>
+					
+				</ul>
+				</div>
+				<div class="clearfix"></div>
+			</div>
+		</div>
+		<div class="header-bottom">
+			
+			<div class="navigation">
+				<nav class="navbar navbar-default" role="navigation">
+		   <div class="wrap">
+			<div class="navbar-header">
+				<button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1">
+					<span class="sr-only">Toggle navigation</span>
+					<span class="icon-bar"></span>
+					<span class="icon-bar"></span>
+					<span class="icon-bar"></span>
+				</button>
+				
+			</div>
+			<!--/.navbar-header-->
+		
+			<div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+				<ul class="nav navbar-nav">
+				<li ><img src="images/cc.png" width="100px" height="40px" style="margin-top:-15px"> </li>
+					 <li class="active"><a href="index.html" >首页</a></li>
+						<li><a href="page1.html">HTML/CSS</a></li>
+				    
+					<li ><a href="page2.html">JS/JQuery</a></li>
+					<li><a href="page3.html">PHP</a></li>
+					
+					<li><a href="page4.html">闲言碎语</a></li>
+					<li><a href="about.html">关于我</a></li>
+					<li style="margin-top:8px">
+					<audio controls="controls">
+                     <source src="images/Cry On My Shoulder.mp3" type="audio/mp3" value="open" />
+                     您的浏览器不支持播放音频！
+                    </audio>
+                    </li>
+					<div class="clearfix"></div>
+				</ul>
+					
+				<div class="search">
+					<!-- start search-->
+				    <div class="search-box">
+					    <div id="sb-search" class="sb-search">
+							<form>
+								<input class="sb-search-input" placeholder="Enter your search term..." type="search" name="search" id="search">
+								<input class="sb-search-submit" type="submit" value="">
+								<span class="sb-icon-search"> </span>
+							</form>
+						</div>
+				    </div>
+					<!-- search-scripts -->
+					<script src="js/classie.js"></script>
+					<script src="js/uisearch.js"></script>
+						<script>
+							new UISearch( document.getElementById( 'sb-search' ) );
+						</script>
+					<!-- //search-scripts -->
+					</div>
+					<div class="clearfix"></div>
+				</div>
+			</div>
+			<!--/.navbar-collapse-->
+	 <!--/.navbar-->
+			</div>
+		</nav>
+		</div>
+	</div>
+	<!-- header-section-ends-here -->
+	<!-- <div class="wrap">
+		<div class="move-text">
+			<div class="breaking_news">
+				<h2>个性宣言</h2>
+			</div>
+			<div class="marquee">
+				<div class="marquee1"><a class="breaking" href="single.html">爱生活，爱美丽，更爱自己！</a></div>
+				
+				<div class="clearfix"></div>
+			</div>
+			<div class="clearfix"></div>
+			<script type="text/javascript" src="js/jquery.marquee.min.js"></script>
+			<script>
+			  $('.marquee').marquee({ pauseOnHover: true });
+			  //@ sourceURL=pen.js
+			</script>
+		</div>
+	</div> -->
+	<!-- content-section-starts-here -->
+	<div class="main-body">
+		<div class="wrap">
+		<!-- <ol class="breadcrumb">
+			  <li><a href="index.html">首页</a></li>
+			  <li class="active">html/css</li>
+			</ol> -->
+			<div class="col-md-12 content-left">
+			<div class="articles sports">
+					<header>
+						<h3 class="title-head">PHP</h3>
+					</header>
+					<div class="article">
+						<div class="article-left">
+							<a href="single.html"><img src="images/php1.jpg"  style="whidth:470px;height:230px"></a>
+						</div>
+						<div class="article-right">
+							<div class="article-title">
+								<p>2016.10.02 <a class="span_link" href="#"><span class="glyphicon glyphicon-comment"></span>0 </a><a class="span_link" href="#"><span class="glyphicon glyphicon-eye-open"></span>181 </a><a class="span_link" href="#"><span class="glyphicon glyphicon-thumbs-up"></span>89</a></p>
+								<a class="title" href="single.html">thinkphp单字母函数</a>
+							</div>
+							<div class="article-text">
+								<p>D函数: 用于实例化Model 格式 项目://分组/模块 D函数用于实例化Model 格式 项目://分组/模块 @param string $name Model资源地址 @param string $layer 业务层名称 @return Model
+                                 D($name='',$layer='').....</p>
+								<a href="single.html"><img src="images/more.png" alt="" /></a>
+								<div class="clearfix"></div>
+							</div>
+						</div>
+						<div class="clearfix"></div>
+					</div><div class="article">
+						<div class="article-left">
+							<a href="single.html"><img src="images/php1.jpg"  style="whidth:470px;height:230px"></a>
+						</div>
+						<div class="article-right">
+							<div class="article-title">
+								<p>2016.10.02 <a class="span_link" href="#"><span class="glyphicon glyphicon-comment"></span>0 </a><a class="span_link" href="#"><span class="glyphicon glyphicon-eye-open"></span>181 </a><a class="span_link" href="#"><span class="glyphicon glyphicon-thumbs-up"></span>89</a></p>
+								<a class="title" href="single.html">thinkphp单字母函数</a>
+							</div>
+							<div class="article-text">
+								<p>D函数: 用于实例化Model 格式 项目://分组/模块 D函数用于实例化Model 格式 项目://分组/模块 @param string $name Model资源地址 @param string $layer 业务层名称 @return Model
+                                 D($name='',$layer='').....</p>
+								<a href="single.html"><img src="images/more.png" alt="" /></a>
+								<div class="clearfix"></div>
+							</div>
+						</div>
+						<div class="clearfix"></div>
+					</div><div class="article">
+						<div class="article-left">
+							<a href="single.html"><img src="images/php1.jpg"  style="whidth:470px;height:230px"></a>
+						</div>
+						<div class="article-right">
+							<div class="article-title">
+								<p>2016.10.02 <a class="span_link" href="#"><span class="glyphicon glyphicon-comment"></span>0 </a><a class="span_link" href="#"><span class="glyphicon glyphicon-eye-open"></span>181 </a><a class="span_link" href="#"><span class="glyphicon glyphicon-thumbs-up"></span>89</a></p>
+								<a class="title" href="single.html">thinkphp单字母函数</a>
+							</div>
+							<div class="article-text">
+								<p>D函数: 用于实例化Model 格式 项目://分组/模块 D函数用于实例化Model 格式 项目://分组/模块 @param string $name Model资源地址 @param string $layer 业务层名称 @return Model
+                                 D($name='',$layer='').....</p>
+								<a href="single.html"><img src="images/more.png" alt="" /></a>
+								<div class="clearfix"></div>
+							</div>
+						</div>
+						<div class="clearfix"></div>
+					</div>
+				</div>
+
+			
+					<div class="photos">
+					<header>
+						<h3 class="title-head">一叶知秋</h3>
+					</header>
+					 <div class="course_demo1">
+								  <ul id="flexiselDemo">	
+									
+									 <li>
+										<a href="single.html"><img src="images/sg1.jpg" alt="" style="height:250px;border-radius:50%" /></a>							
+									 </li>
+										
+									 <li>
+										<a href="single.html"><img src="images/sg2.jpg" alt="" style="height:250px;border-radius:50%"/></a>
+									 </li>
+									  <li>
+										<a href="single.html"><img src="images/sg5.jpg" alt="" style="height:250px;border-radius:50%"/></a>
+									  </li>	
+									 <li>
+										<a href="single.html"><img src="images/sg3.jpg" alt="" style="height:250px;border-radius:50%"/></a>
+									 </li>
+
+									 
+								 </ul>
+							 </div>
+							 <link rel="stylesheet" href="css/flexslider.css" type="text/css" media="screen" />
+								<script type="text/javascript">
+							 $(window).load(function() {
+								$("#flexiselDemo").flexisel({
+									visibleItems: 4,
+									animationSpeed: 1000,
+									autoPlay: true,
+									autoPlaySpeed: 3000,    		
+									pauseOnHover: true,
+									enableResponsiveBreakpoints: true,
+									responsiveBreakpoints: { 
+										portrait: { 
+											changePoint:480,
+											visibleItems: 2
+										}, 
+										landscape: { 
+											changePoint:640,
+											visibleItems: 2
+										},
+										tablet: { 
+											changePoint:768,
+											visibleItems: 3
+										}
+									}
+								});
+								
+							 });
+							  </script>
+							 <script type="text/javascript" src="js/jquery.flexisel.js"></script>
+					</div>
+
+				</div>
+			
+			<div class="clearfix"></div>
+		</div>
+	</div> 
+	<!-- content-section-ends-here -->
+	<div class="footer">
+	<div class="footer-top">
+			<div class="wrap" style="text-align:center">
+					<h4 style="color:white">Copyright &copy; 2016.928曹娟.人机交互.期末项目</h4>
+				<div class="clearfix"></div>
+			</div>
+		
+	</div>
+</div>
+	
+</body>
+</html>
